@@ -1,0 +1,7 @@
+# Miscellaneous
+ro.product.device_for_attestation=air
+ro.product.manufacturer_for_attestation=Xiaomi
+ro.product.system_dlkm.cert=
+ro.product.system_dlkm.home=
+ro.product.system_dlkm.marketname=
+
