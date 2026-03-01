@@ -1,0 +1,119 @@
+info as per running device on rooted stock rom:
+
+| Name            | Type  | Maj/Min |       Blocks |        Start |          End |    Size (bytes) |       Size | By-Name                              |# Sort Symlink                |
+
+| preloader_raw_a | raw   | 254:55  |         8184 |            0 |         8183 |         4190208 |      3.99M | /dev/block/by-name/preloader_raw_a   | /dev/block/dm-55             |
+| preloader_raw_b | raw   | 254:56  |         8184 |            0 |         8183 |         4190208 |      3.99M | /dev/block/by-name/preloader_raw_b   | /dev/block/dm-56             |
+| preloader_a     | raw   | 8:0     |         8192 |            0 |         8191 |         4194304 |      4.00M | /dev/block/by-name/preloader_a       | /dev/block/sda               |
+| preloader_emmc_a| raw   | 8:0     |         8192 |            0 |         8191 |         4194304 |      4.00M | /dev/block/by-name/preloader_emmc_a  | /dev/block/sda               |
+| preloader_ufs_a | raw   | 8:0     |         8192 |            0 |         8191 |         4194304 |      4.00M | /dev/block/by-name/preloader_ufs_a   | /dev/block/sda               |
+| sda             | raw   | 8:0     |         8192 |            0 |         8191 |         4194304 |      4.00M | /dev/block/by-name/sda               | /dev/block/sda               |
+| preloader_b     | raw   | 8:16    |         8192 |            0 |         8191 |         4194304 |      4.00M | /dev/block/by-name/preloader_b       | /dev/block/sdb               |
+| preloader_emmc_b| raw   | 8:16    |         8192 |            0 |         8191 |         4194304 |      4.00M | /dev/block/by-name/preloader_emmc_b  | /dev/block/sdb               |
+| preloader_ufs_b | raw   | 8:16    |         8192 |            0 |         8191 |         4194304 |      4.00M | /dev/block/by-name/preloader_ufs_b   | /dev/block/sdb               |
+| sdb             | raw   | 8:16    |         8192 |            0 |         8191 |         4194304 |      4.00M | /dev/block/by-name/sdb               | /dev/block/sdb               |
+| vbmeta_b        | raw   | 8:42    |        16384 |       512064 |       528447 |         8388608 |      8.00M | /dev/block/by-name/vbmeta_b          | /dev/block/sdc10             |
+| vbmeta_system_b | raw   | 8:43    |        16384 |       528448 |       544831 |         8388608 |      8.00M | /dev/block/by-name/vbmeta_system_b   | /dev/block/sdc11             |
+| vbmeta_vendor_b | raw   | 8:44    |        16384 |       544832 |       561215 |         8388608 |      8.00M | /dev/block/by-name/vbmeta_vendor_b   | /dev/block/sdc12             |
+| metadata        | f2fs  | 8:45    |       131072 |       561216 |       692287 |        67108864 |     64.00M | /dev/block/by-name/metadata          | /dev/block/sdc13             |
+| persist         | ext4  | 8:46    |       110528 |       692288 |       802815 |        56590336 |     53.96M | /dev/block/by-name/persist           | /dev/block/sdc14             |
+| protect1        | ext4  | 8:47    |        16384 |       802816 |       819199 |         8388608 |      8.00M | /dev/block/by-name/protect1          | /dev/block/sdc15             |
+| protect2        | ext4  | 259:0   |        16384 |       819200 |       835583 |         8388608 |      8.00M | /dev/block/by-name/protect2          | /dev/block/sdc16             |
+| seccfg          | raw   | 259:1   |        16384 |       835584 |       851967 |         8388608 |      8.00M | /dev/block/by-name/seccfg            | /dev/block/sdc17             |
+| otp             | raw   | 259:2   |        88064 |       851968 |       940031 |        45088768 |     43.00M | /dev/block/by-name/otp               | /dev/block/sdc18             |
+| pstore          | raw   | 259:3   |       272384 |       940032 |      1212415 |       139460608 |    133.00M | /dev/block/by-name/pstore            | /dev/block/sdc19             |
+| misc            | raw   | 8:33    |         1024 |           64 |         1087 |          524288 |      0.50M | /dev/block/by-name/misc              | /dev/block/sdc1              |
+| md1img_a        | raw   | 259:4   |       409600 |      1212416 |      1622015 |       209715200 |    200.00M | /dev/block/by-name/md1img_a          | /dev/block/sdc20             |
+| spmfw_a         | raw   | 259:5   |         2048 |      1622016 |      1624063 |         1048576 |      1.00M | /dev/block/by-name/spmfw_a           | /dev/block/sdc21             |
+| mcf_ota_a       | ext4  | 259:6   |        65536 |      1624064 |      1689599 |        33554432 |     32.00M | /dev/block/by-name/mcf_ota_a         | /dev/block/sdc22             |
+| pi_img_a        | raw   | 259:7   |         2048 |      1689600 |      1691647 |         1048576 |      1.00M | /dev/block/by-name/pi_img_a          | /dev/block/sdc23             |
+| dpm_a           | raw   | 259:8   |         8192 |      1691648 |      1699839 |         4194304 |      4.00M | /dev/block/by-name/dpm_a             | /dev/block/sdc24             |
+| scp_a           | raw   | 259:9   |        12288 |      1699840 |      1712127 |         6291456 |      6.00M | /dev/block/by-name/scp_a             | /dev/block/sdc25             |
+| vcp_a           | raw   | 259:10  |        12288 |      1712128 |      1724415 |         6291456 |      6.00M | /dev/block/by-name/vcp_a             | /dev/block/sdc26             |
+| sspm_a          | raw   | 259:11  |         2048 |      1724416 |      1726463 |         1048576 |      1.00M | /dev/block/by-name/sspm_a            | /dev/block/sdc27             |
+| mcupm_a         | raw   | 259:12  |         2048 |      1726464 |      1728511 |         1048576 |      1.00M | /dev/block/by-name/mcupm_a           | /dev/block/sdc28             |
+| gz_a            | raw   | 259:13  |        65536 |      1728512 |      1794047 |        33554432 |     32.00M | /dev/block/by-name/gz_a              | /dev/block/sdc29             |
+| para            | raw   | 8:34    |         1024 |         1088 |         2111 |          524288 |      0.50M | /dev/block/by-name/para              | /dev/block/sdc2              |
+| lk_a            | raw   | 259:14  |        32768 |      1794048 |      1826815 |        16777216 |     16.00M | /dev/block/by-name/lk_a              | /dev/block/sdc30             |
+| boot_a          | raw   | 259:15  |       131072 |      1826816 |      1957887 |        67108864 |     64.00M | /dev/block/by-name/boot_a            | /dev/block/sdc31             |
+| vendor_boot_a   | raw   | 259:16  |       131072 |      1957888 |      2088959 |        67108864 |     64.00M | /dev/block/by-name/vendor_boot_a     | /dev/block/sdc32             |
+| init_boot_a     | raw   | 259:17  |        16384 |      2088960 |      2105343 |         8388608 |      8.00M | /dev/block/by-name/init_boot_a       | /dev/block/sdc33             |
+| dtbo_a          | raw   | 259:18  |        16384 |      2105344 |      2121727 |         8388608 |      8.00M | /dev/block/by-name/dtbo_a            | /dev/block/sdc34             |
+| tee_a           | raw   | 259:19  |        10240 |      2121728 |      2131967 |         5242880 |      5.00M | /dev/block/by-name/tee_a             | /dev/block/sdc35             |
+| connsys_bt_a    | raw   | 259:20  |        16384 |      2131968 |      2148351 |         8388608 |      8.00M | /dev/block/by-name/connsys_bt_a      | /dev/block/sdc36             |
+| connsys_wifi_a  | raw   | 259:21  |        16384 |      2148352 |      2164735 |         8388608 |      8.00M | /dev/block/by-name/connsys_wifi_a    | /dev/block/sdc37             |
+| connsys_gnss_a  | raw   | 259:22  |        16384 |      2164736 |      2181119 |         8388608 |      8.00M | /dev/block/by-name/connsys_gnss_a    | /dev/block/sdc38             |
+| sec1            | raw   | 259:23  |         4096 |      2181120 |      2185215 |         2097152 |      2.00M | /dev/block/by-name/sec1              | /dev/block/sdc39             |
+| expdb           | raw   | 8:35    |       262144 |         2112 |       264255 |       134217728 |    128.00M | /dev/block/by-name/expdb             | /dev/block/sdc3              |
+| proinfo         | raw   | 259:24  |         6144 |      2185216 |      2191359 |         3145728 |      3.00M | /dev/block/by-name/proinfo           | /dev/block/sdc40             |
+| efuse           | raw   | 259:25  |         1024 |      2191360 |      2192383 |          524288 |      0.50M | /dev/block/by-name/efuse             | /dev/block/sdc41             |
+| nvram           | raw   | 259:26  |       131072 |      2192384 |      2323455 |        67108864 |     64.00M | /dev/block/by-name/nvram             | /dev/block/sdc42             |
+| boot_para       | raw   | 259:27  |         2048 |      2323456 |      2325503 |         1048576 |      1.00M | /dev/block/by-name/boot_para         | /dev/block/sdc43             |
+| dram_para       | raw   | 259:28  |        51200 |      2325504 |      2376703 |        26214400 |     25.00M | /dev/block/by-name/dram_para         | /dev/block/sdc44             |
+| countrycode_a   | raw   | 259:29  |         2048 |      2376704 |      2378751 |         1048576 |      1.00M | /dev/block/by-name/countrycode_a     | /dev/block/sdc45             |
+| logo_a          | raw   | 259:30  |        32768 |      2378752 |      2411519 |        16777216 |     16.00M | /dev/block/by-name/logo_a            | /dev/block/sdc46             |
+| bk1             | raw   | 259:31  |        13312 |      2411520 |      2424831 |         6815744 |      6.50M | /dev/block/by-name/bk1               | /dev/block/sdc47             |
+| md1img_b        | raw   | 259:32  |       409600 |      2424832 |      2834431 |       209715200 |    200.00M | /dev/block/by-name/md1img_b          | /dev/block/sdc48             |
+| spmfw_b         | raw   | 259:33  |         2048 |      2834432 |      2836479 |         1048576 |      1.00M | /dev/block/by-name/spmfw_b           | /dev/block/sdc49             |
+| frp             | raw   | 8:36    |         2048 |       264256 |       266303 |         1048576 |      1.00M | /dev/block/by-name/frp               | /dev/block/sdc4              |
+| mcf_ota_b       | ext4  | 259:34  |        65536 |      2836480 |      2902015 |        33554432 |     32.00M | /dev/block/by-name/mcf_ota_b         | /dev/block/sdc50             |
+| pi_img_b        | raw   | 259:35  |         2048 |      2902016 |      2904063 |         1048576 |      1.00M | /dev/block/by-name/pi_img_b          | /dev/block/sdc51             |
+| dpm_b           | raw   | 259:36  |         8192 |      2904064 |      2912255 |         4194304 |      4.00M | /dev/block/by-name/dpm_b             | /dev/block/sdc52             |
+| scp_b           | raw   | 259:37  |        12288 |      2912256 |      2924543 |         6291456 |      6.00M | /dev/block/by-name/scp_b             | /dev/block/sdc53             |
+| vcp_b           | raw   | 259:38  |        12288 |      2924544 |      2936831 |         6291456 |      6.00M | /dev/block/by-name/vcp_b             | /dev/block/sdc54             |
+| sspm_b          | raw   | 259:39  |         2048 |      2936832 |      2938879 |         1048576 |      1.00M | /dev/block/by-name/sspm_b            | /dev/block/sdc55             |
+| mcupm_b         | raw   | 259:40  |         2048 |      2938880 |      2940927 |         1048576 |      1.00M | /dev/block/by-name/mcupm_b           | /dev/block/sdc56             |
+| gz_b            | raw   | 259:41  |        65536 |      2940928 |      3006463 |        33554432 |     32.00M | /dev/block/by-name/gz_b              | /dev/block/sdc57             |
+| lk_b            | raw   | 259:42  |        32768 |      3006464 |      3039231 |        16777216 |     16.00M | /dev/block/by-name/lk_b              | /dev/block/sdc58             |
+| boot_b          | raw   | 259:43  |       131072 |      3039232 |      3170303 |        67108864 |     64.00M | /dev/block/by-name/boot_b            | /dev/block/sdc59             |
+| nvcfg           | ext4  | 8:37    |        65536 |       266304 |       331839 |        33554432 |     32.00M | /dev/block/by-name/nvcfg             | /dev/block/sdc5              |
+| vendor_boot_b   | raw   | 259:44  |       131072 |      3170304 |      3301375 |        67108864 |     64.00M | /dev/block/by-name/vendor_boot_b     | /dev/block/sdc60             |
+| connsys_bt_b    | raw   | 259:45  |        16384 |      3301376 |      3317759 |         8388608 |      8.00M | /dev/block/by-name/connsys_bt_b      | /dev/block/sdc61             |
+| connsys_wifi_b  | raw   | 259:46  |        16384 |      3317760 |      3334143 |         8388608 |      8.00M | /dev/block/by-name/connsys_wifi_b    | /dev/block/sdc62             |
+| connsys_gnss_b  | raw   | 259:47  |        16384 |      3334144 |      3350527 |         8388608 |      8.00M | /dev/block/by-name/connsys_gnss_b    | /dev/block/sdc63             |
+| dtbo_b          | raw   | 259:48  |        16384 |      3350528 |      3366911 |         8388608 |      8.00M | /dev/block/by-name/dtbo_b            | /dev/block/sdc64             |
+| countrycode_b   | raw   | 259:49  |         2048 |      3366912 |      3368959 |         1048576 |      1.00M | /dev/block/by-name/countrycode_b     | /dev/block/sdc65             |
+| logo_b          | raw   | 259:50  |        32768 |      3368960 |      3401727 |        16777216 |     16.00M | /dev/block/by-name/logo_b            | /dev/block/sdc66             |
+| tee_b           | raw   | 259:51  |        10240 |      3401728 |      3411967 |         5242880 |      5.00M | /dev/block/by-name/tee_b             | /dev/block/sdc67             |
+| init_boot_b     | raw   | 259:52  |        16384 |      3411968 |      3428351 |         8388608 |      8.00M | /dev/block/by-name/init_boot_b       | /dev/block/sdc68             |
+| cust            | raw   | 259:53  |      4194304 |      3428352 |      7622655 |      2147483648 |   2048.00M | /dev/block/by-name/cust              | /dev/block/sdc69             |
+| nvdata          | ext4  | 8:38    |       131072 |       331840 |       462911 |        67108864 |     64.00M | /dev/block/by-name/nvdata            | /dev/block/sdc6              |
+| gsort           | raw   | 259:54  |        32768 |      7622656 |      7655423 |        16777216 |     16.00M | /dev/block/by-name/gsort             | /dev/block/sdc70             |
+| ffu             | raw   | 259:55  |        16384 |      7655424 |      7671807 |         8388608 |      8.00M | /dev/block/by-name/ffu               | /dev/block/sdc71             |
+| mem             | raw   | 259:56  |         8192 |      7671808 |      7679999 |         4194304 |      4.00M | /dev/block/by-name/mem               | /dev/block/sdc72             |
+| rescue          | ext4  | 259:57  |       262144 |      7680000 |      7942143 |       134217728 |    128.00M | /dev/block/by-name/rescue            | /dev/block/sdc73             |
+| bk0             | raw   | 259:58  |        20480 |      7942144 |      7962623 |        10485760 |     10.00M | /dev/block/by-name/bk0               | /dev/block/sdc74             |
+| super           | raw   | 259:59  |     14680064 |      7962624 |     22642687 |      7516192768 |   7168.00M | /dev/block/by-name/super             | /dev/block/sdc75             |
+| userdata        | raw   | 259:60  |    102268864 |     22642688 |    124911551 |     52361658368 |  49935.96M | /dev/block/by-name/userdata          | /dev/block/sdc76             |
+| flashinfo       | raw   | 259:61  |        32768 |    124911552 |    124944319 |        16777216 |     16.00M | /dev/block/by-name/flashinfo         | /dev/block/sdc77             |
+| vbmeta_a        | raw   | 8:39    |        16384 |       462912 |       479295 |         8388608 |      8.00M | /dev/block/by-name/vbmeta_a          | /dev/block/sdc7              |
+| vbmeta_system_a | raw   | 8:40    |        16384 |       479296 |       495679 |         8388608 |      8.00M | /dev/block/by-name/vbmeta_system_a   | /dev/block/sdc8              |
+| vbmeta_vendor_a | raw   | 8:41    |        16384 |       495680 |       512063 |         8388608 |      8.00M | /dev/block/by-name/vbmeta_vendor_a   | /dev/block/sdc9              |
+| sdc             | raw   | 8:32    |    124944384 |            0 |    124944383 |     63971524608 |  61008.00M | /dev/block/by-name/sdc               | /dev/block/sdc               |
+
+
+| DM Device          | Name               | Maj/Min   |  Start |            End |         Blocks |       Size (bytes) |         Size |      target=$(readlinkBy-Name                | Backing              |
+
+| /dev/block/dm-0    | odm_a              | 254:0     |      0 |           3911 |           3912 |            2002944 |        1.91M |                                              | sdc75                |
+| /dev/block/dm-10   | vendor-verity      | 254:10    |      0 |        1507167 |        1507168 |          771670016 |      735.92M |                                              | dm-6                 |
+| /dev/block/dm-11   | product-verity     | 254:11    |      0 |        5197823 |        5197824 |         2661285888 |     2538.00M |                                              | dm-2                 |
+| /dev/block/dm-12   | mi_ext-verity      | 254:12    |      0 |        1083703 |        1083704 |          554856448 |      529.15M |                                              | dm-8                 |
+| /dev/block/dm-13   | odm-verity         | 254:13    |      0 |           3679 |           3680 |            1884160 |        1.79M |                                              | dm-0                 |
+| /dev/block/dm-14   | vendor_dlkm-verity | 254:14    |      0 |          25687 |          25688 |           13152256 |       12.54M |                                              | dm-7                 |
+| /dev/block/dm-15   | odm_dlkm-verity    | 254:15    |      0 |              7 |              8 |               4096 |        0.00M |                                              | dm-1                 |
+| /dev/block/dm-16   | system_dlkm-verity | 254:16    |      0 |              7 |              8 |               4096 |        0.00M |                                              | dm-4                 |
+| /dev/block/dm-1    | odm_dlkm_a         | 254:1     |      0 |            679 |            680 |             348160 |        0.33M |                                              | sdc75                |
+| /dev/block/dm-2    | product_a          | 254:2     |      0 |        5297183 |        5297184 |         2712158208 |     2586.51M |                                              | sdc75                |
+| /dev/block/dm-30   | com.android.uwb    | 254:30    |      0 |           7479 |           7480 |            3829760 |        3.65M |                                              | loop41               |
+| /dev/block/dm-3    | system_a           | 254:3     |      0 |        1670839 |        1670840 |          855470080 |      815.83M |                                              | sdc75                |
+| /dev/block/dm-49   | com.android.wifi   | 254:49    |      0 |          16831 |          16832 |            8617984 |        8.21M |                                              | loop40               |
+| /dev/block/dm-4    | system_dlkm_a      | 254:4     |      0 |            679 |            680 |             348160 |        0.33M |                                              | sdc75                |
+| /dev/block/dm-54   | userdata           | 254:54    |      0 |      102268863 |      102268864 |        52361658368 |    49935.96M |                                              | sdc76                |
+| /dev/block/dm-55   | pl_a               | 254:55    |      0 |           8183 |           8184 |            4190208 |        3.99M | /dev/block/by-name/preloader_raw_a           | sda                  |
+| /dev/block/dm-56   | pl_b               | 254:56    |      0 |           8183 |           8184 |            4190208 |        3.99M | /dev/block/by-name/preloader_raw_b           | sdb                  |
+| /dev/block/dm-5    | system_ext_a       | 254:5     |      0 |        1343839 |        1343840 |          688046080 |      656.17M |                                              | sdc75                |
+| /dev/block/dm-6    | vendor_a           | 254:6     |      0 |        1536095 |        1536096 |          786481152 |      750.04M |                                              | sdc75                |
+| /dev/block/dm-7    | vendor_dlkm_a      | 254:7     |      0 |          26351 |          26352 |           13492224 |       12.86M |                                              | sdc75                |
+| /dev/block/dm-8    | mi_ext_a           | 254:8     |      0 |        1100911 |        1100912 |          563666944 |      537.55M |                                              | sdc75                |
+| /dev/block/dm-9    | system-verity      | 254:9     |      0 |        1639391 |        1639392 |          839368704 |      800.48M |                                              | dm-3                 |
+
